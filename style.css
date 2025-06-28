@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #2e1f47;
+  background: #9a9a9a;
   color: #f0f0f0;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  background: #2e1f47;
+  background: #9a9a9a;
   border: 1px solid #444;
   border-radius: 8px;
   padding: 5px 10px;
