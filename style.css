@@ -65,13 +65,13 @@ body {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #bfefff;
+  border: 2px solid #ffbfbf;
 }
 
 .info-text h2 {
   margin: 0;
   font-size: 1.5rem;
-  color: #bfefff;
+  color: #ffbfbf;
 }
 
 .info-text ul {
@@ -99,7 +99,7 @@ body {
 }
 
 .btn {
-  background: #bfefff;
+  background: #ffbfbf;
   border: none;
   padding: 10px;
   color: #222;
@@ -110,7 +110,7 @@ body {
 }
 
 .btn:hover {
-  background: #486875;
+  background: #520505;
 }
 
 .player iframe {
