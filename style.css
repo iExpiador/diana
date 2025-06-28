@@ -65,13 +65,13 @@ body {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ff69b4;
+  border: 2px solid #bfefff;
 }
 
 .info-text h2 {
   margin: 0;
   font-size: 1.5rem;
-  color: #ff69b4;
+  color: #bfefff;
 }
 
 .info-text ul {
@@ -99,7 +99,7 @@ body {
 }
 
 .btn {
-  background: #ff69b4;
+  background: #bfefff;
   border: none;
   padding: 10px;
   color: #fff;
