@@ -5,7 +5,7 @@ body {
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #1e1e2f;
-  color: #f0f0f0;
+  color: #000001;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +110,7 @@ body {
 }
 
 .btn:hover {
-  background: #ff85c1;
+  background: #486875;
 }
 
 .player iframe {
