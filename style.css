@@ -137,3 +137,81 @@ body {
     font-size: 0.9rem;
   }
 }
+
+/* Botón flotante */
+#music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Neón rosa permanente */
+    box-shadow: 
+        0 0 10px rgba(255, 0, 150, 0.7),
+        inset 0 0 5px rgba(255, 0, 150, 0.3);
+    /* Latido infinito */
+    animation: pulse 2s infinite ease-in-out;
+    transition: all 0.3s;
+}
+
+/* Animación de pulsación */
+@keyframes pulse {
+    0% { 
+        transform: scale(1);
+        box-shadow: 
+            0 0 10px rgba(255, 0, 150, 0.7),
+            inset 0 0 5px rgba(255, 0, 150, 0.3);
+    }
+    50% { 
+        transform: scale(1.1);
+        box-shadow: 
+            0 0 15px rgba(255, 0, 150, 0.9),
+            inset 0 0 10px rgba(255, 0, 150, 0.5);
+    }
+    100% { 
+        transform: scale(1);
+        box-shadow: 
+            0 0 10px rgba(255, 0, 150, 0.7),
+            inset 0 0 5px rgba(255, 0, 150, 0.3);
+    }
+}
+
+/* Efecto al pasar el mouse (brillo intenso) */
+#music-toggle:hover {
+    box-shadow: 
+        0 0 20px rgba(255, 0, 150, 1),
+        inset 0 0 10px rgba(255, 0, 150, 0.7);
+}
+
+/* Efecto al hacer clic (onda expansiva rosa) */
+#music-toggle:active {
+    animation: pulse-click 0.5s;
+}
+
+@keyframes pulse-click {
+    0% { 
+        transform: scale(0.9);
+        box-shadow: 
+            0 0 5px rgba(255, 0, 150, 0.5),
+            inset 0 0 2px rgba(255, 0, 150, 0.2);
+    }
+    50% { 
+        transform: scale(1.15);
+        box-shadow: 
+            0 0 25px rgba(255, 0, 150, 1),
+            inset 0 0 15px rgba(255, 0, 150, 0.8);
+    }
+    100% { 
+        transform: scale(1);
+    }
+}
