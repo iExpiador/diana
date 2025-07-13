@@ -37,9 +37,35 @@
     </div>
   </div>
 
-  <div class="player">
-    <iframe width="0" height="0" src="https://www.youtube.com/embed/vs61OHs2g-w?autoplay=1&loop=1&playlist=U8QhB8_0t2g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
+ <!-- Botón flotante -->
+    <button id="music-toggle">🔇</button>
+    
+    <!-- Reproductor oculto -->
+    <audio id="bg-music" loop>
+        <source src="assets/creep.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const music = document.getElementById('bg-music');
+        const toggleBtn = document.getElementById('music-toggle');
+        let isPlaying = false;
+
+        // Intentar autoplay (puede fallar)
+        music.play().then(() => {
+            isPlaying = true;
+            toggleBtn.textContent = '🔊';
+        }).catch(() => {
+            isPlaying = false;
+            toggleBtn.textContent = '🔇';
+        });
+
+        // Control manual
+        toggleBtn.addEventListener('click', () => {
+            isPlaying ? music.pause() : music.play();
+            isPlaying = !isPlaying;
+            toggleBtn.textContent = isPlaying ? '🔊' : '🔇';
+        });
+    </script>
 
   <script src="script.js"></script>
 </body>
